@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "AP Classroom 深色模式",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "为 AP Students、AP Classroom 和 My AP 入口调整深浅配色，保留原站布局及题目图片。",
   "permissions": ["storage"],
   "action": {

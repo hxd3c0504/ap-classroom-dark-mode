@@ -4,13 +4,13 @@
 
 为 AP Classroom、AP Students 和相关登录入口提供深色配色的 Chrome 扩展。
 
-支持 **深色 / 浅色 / 跟随系统**，默认跟随浏览器报告的系统外观。保留原站布局、字号和题目图片，保留课程卡片的学科主题色。当前版本：**0.3.2**。
+支持 **深色 / 浅色 / 跟随系统**，默认跟随浏览器报告的系统外观。保留原站布局、字号和题目图片，保留课程卡片的学科主题色。当前版本：**0.3.3**。
 
 这是独立开发的非官方扩展，与 College Board 无隶属或背书关系。
 
 ## 安装
 
-1. [下载安装包](https://github.com/hxd3c0504/ap-classroom-dark-mode/raw/refs/heads/main/dist/ap-classroom-dark-mode-0.3.2.zip) 并解压到一个固定文件夹。
+1. [下载安装包](https://github.com/hxd3c0504/ap-classroom-dark-mode/raw/refs/heads/main/dist/ap-classroom-dark-mode-0.3.3.zip) 并解压到一个固定文件夹。
 2. 在 Chrome 地址栏打开 `chrome://extensions`，开启右上角的“开发者模式”。
 3. 点击“加载已解压的扩展程序”，选择解压后包含 `manifest.json` 的文件夹。
 4. 刷新 AP 网站。点击浏览器工具栏上的月牙书页图标，即可切换三个模式。
@@ -28,7 +28,7 @@
 | My AP 账号类型入口 | `https://myap.collegeboard.org/login*` |
 | College Board 身份验证页 | `https://prod.idp.collegeboard.org/*` |
 
-包含常见导航、课程信息区、作业列表、题目工具、Java 参考表和部分检查页的颜色适配。成绩条中的数字分数使用黑色，保留原来的黄绿底色。
+包含常见导航、课程信息区、作业列表、题目工具、Java 参考表、部分检查页及成绩概览统计表、图例和总用时栏的颜色适配。成绩条中的数字分数使用黑色，保留原来的黄绿底色。
 
 网站更新和未覆盖的题型、弹窗可能仍需调整。不适用于 Bluebook 独立应用、浏览器 PDF 查看器或其他未列出的域名。图片内部的白色不会统一反相。
 

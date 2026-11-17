@@ -324,3 +324,47 @@ html[data-ap-dark="on"] .student_assignments_table [data-ap-score-fraction]:is(t
 html[data-ap-dark="on"] .student_assignments_table [data-ap-score-fraction] :is(text,tspan) {
   fill: #000 !important;
 }
+
+/* Completed assignment Results Overview: legends, unit report and time summary. */
+html[data-ap-dark="on"] #Results :is(.performanceFiltersContainer,.performanceFiltersHeader,.performanceFiltersBody,.quartileContainer),
+html[data-ap-dark="on"] #Results [class~="bg-[#F1F1F2]"] {
+  background-color: var(--ap-surface) !important;
+  color: var(--ap-text) !important;
+  border-color: var(--ap-border) !important;
+}
+html[data-ap-dark="on"] #Results :is(.performanceFiltersHeader,.performance-filter-label) {
+  color: var(--ap-text) !important;
+}
+html[data-ap-dark="on"] #Results .assignment_trend_report_table,
+html[data-ap-dark="on"] #Results .assignment_trend_report_table :is(thead,tbody,tr,th,td) {
+  background-color: var(--ap-surface) !important;
+  color: var(--ap-text) !important;
+  border-color: var(--ap-border) !important;
+}
+html[data-ap-dark="on"] #Results .assignment_trend_report_table :is(th,td) :is(div,span) {
+  color: var(--ap-text) !important;
+}
+html[data-ap-dark="on"] #Results .assignment_trend_report_table :is(thead th,.trend_report_dates_cell) {
+  background-color: var(--ap-toolbar) !important;
+}
+html[data-ap-dark="on"] #Results .assignment_trend_report_table tbody tr:hover :is(th,td) {
+  background-color: #2b3a50 !important;
+}
+html[data-ap-dark="on"] #Results .assignment_trend_report_table .percentage-graph-container {
+  background-color: #344154 !important;
+}
+/* Preserve the yellow/green achievement colors with dark percentage labels. */
+html[data-ap-dark="on"] #Results .assignment_trend_report_table :is(.tier-developing,.tier-approaching,.tier-progressing,.tier-achieving),
+html[data-ap-dark="on"] #Results .assignment_trend_report_table :is(.tier-developing,.tier-approaching,.tier-progressing,.tier-achieving) span {
+  color: #000 !important;
+}
+html[data-ap-dark="on"] #Results .assignment_trend_report_table .default-tier {
+  background-color: #536174 !important;
+  color: #fff !important;
+}
+html[data-ap-dark="on"] #Results .assignment_trend_report_table .default-tier span {
+  color: #fff !important;
+}
+html[data-ap-dark="on"] #Results table thead svg path {
+  fill: #bdc9da !important;
+}

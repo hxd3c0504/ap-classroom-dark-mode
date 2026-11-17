@@ -1,5 +1,11 @@
 # 更新记录
 
+## 0.3.3 · 2026-11-17
+
+- 补齐 Results Overview 的 Content & Skills Performance 图例、表头、日期行及统计表的深色配色。
+- 修复 Questions 页 Total Time Spent 横栏的浅色背景；增强表头排序图标的可见度。
+- 保留黄绿成绩条与技能标签原色，成绩百分比使用黑字，NA 使用清晰的灰底白字。
+
 ## 0.3.2 · 2026-11-17
 
 - 补齐 My AP 账号类型入口和 College Board 身份验证界面的深色配色。
