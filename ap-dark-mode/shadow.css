@@ -1,0 +1,70 @@
+/* Paired foreground/background colors for College Board's open components. */
+:host([data-ap-dark="on"]) {
+  color-scheme: dark;
+  --ap-bg: #171b22;
+  --ap-surface: #232a35;
+  --ap-raised: #293448;
+  --ap-text: #e4e8ef;
+  --ap-muted: #b5c2d5;
+  --ap-link: #a8ceff;
+  --ap-border: #46546a;
+  color: var(--ap-text);
+}
+:host([data-ap-dark="on"]) :is(.myap-widget-shadow,#myap-root,.cbw-header,.cbw-footer,.cbw-notification-widget) {
+  color: var(--ap-text) !important;
+  background-color: var(--ap-bg) !important;
+}
+:host([data-ap-dark="on"]) :is(.cb-card,.cb-white-bg,.cb-gray5-bg,.cb-gray10-bg,[class*="enrollment-module_status-container_"],[class*="buttonlinks-module_event-links_"]) {
+  color: var(--ap-text) !important;
+  background-color: var(--ap-surface) !important;
+  border-color: var(--ap-border) !important;
+}
+:host([data-ap-dark="on"]) :is(h1,h2,h3,h4,h5,h6,p,.cb-card-title,.cb-card-desc,[class*="enrollment-module_status-container_"] *):not([class*="coursecard-module_header_"] *) {
+  color: var(--ap-text) !important;
+}
+:host([data-ap-dark="on"]) :is(a,.cbw-black1,.cbw-blue5) {
+  color: var(--ap-link) !important;
+}
+:host([data-ap-dark="on"]) :is(a:hover,a:focus-visible) { color: #d4e7ff !important; }
+:host([data-ap-dark="on"]) .cbw-skip {
+  background-color: var(--ap-surface) !important;
+  color: var(--ap-link) !important;
+}
+:host([data-ap-dark="on"]) :is([class*="buttonlinks-module_action-link_"],[class*="buttonlinks-module_event-link_"]) {
+  color: var(--ap-link) !important;
+  background-color: var(--ap-surface) !important;
+  border-color: var(--ap-border) !important;
+}
+:host([data-ap-dark="on"]) :is([class*="coursecard-module_course-card_"],.cb-card) {
+  border-color: var(--ap-border) !important;
+}
+:host([data-ap-dark="on"]) [class*="banner-module_banner_"] {
+  background-color: #243650 !important;
+  color: var(--ap-text) !important;
+}
+:host([data-ap-dark="on"]) :is(.cb-card-cta,.cb-blue5-bg.cb-card) {
+  background-color: #263b58 !important;
+  color: var(--ap-text) !important;
+}
+:host([data-ap-dark="on"]) .cb-btn {
+  color: #f1f6ff !important;
+  background-color: #315798 !important;
+  border-color: #8cafe2 !important;
+}
+:host([data-ap-dark="on"]) .cb-btn :is(span,strong) { color: inherit !important; }
+:host([data-ap-dark="on"]) .cb-btn-yellow {
+  background-color: #e2c064 !important;
+  color: #1b2432 !important;
+  border-color: #e2c064 !important;
+}
+:host([data-ap-dark="on"]) :is(.cbw-menu,.cbw-login,.cbw-panel,.cbw-search-results,[role="dialog"]) {
+  color: var(--ap-text) !important;
+  background-color: var(--ap-surface) !important;
+  border-color: var(--ap-border) !important;
+}
+:host([data-ap-dark="on"]) :is(input,textarea,select) {
+  background-color: var(--ap-surface) !important;
+  color: var(--ap-text) !important;
+  border-color: #8598b4 !important;
+}
+:host([data-ap-dark="on"]) :is(input,textarea)::placeholder { color: var(--ap-muted) !important; }

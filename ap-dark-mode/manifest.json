@@ -1,0 +1,52 @@
+{
+  "manifest_version": 3,
+  "name": "AP Classroom 深色模式",
+  "version": "0.3.2",
+  "description": "为 AP Students、AP Classroom 和 My AP 入口调整深浅配色，保留原站布局及题目图片。",
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "AP Classroom 深色模式",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "web_accessible_resources": [{
+    "resources": ["shadow.css"],
+    "matches": [
+      "https://apstudents.collegeboard.org/*",
+      "https://apclassroom.collegeboard.org/*",
+      "https://prod.idp.collegeboard.org/*"
+    ]
+  }],
+  "content_scripts": [{
+    "matches": [
+      "https://apstudents.collegeboard.org/*",
+      "https://apclassroom.collegeboard.org/*"
+    ],
+    "css": ["theme.css"],
+    "js": ["shadows.js", "contrast.js", "content.js"],
+    "run_at": "document_start",
+    "all_frames": true,
+    "match_about_blank": true
+  }, {
+    "matches": ["https://myap.collegeboard.org/login*"],
+    "css": ["myap-login.css"],
+    "js": ["content.js"],
+    "run_at": "document_start"
+  }, {
+    "matches": ["https://prod.idp.collegeboard.org/*"],
+    "css": ["auth-login.css"],
+    "js": ["shadows.js", "content.js"],
+    "run_at": "document_start"
+  }]
+}

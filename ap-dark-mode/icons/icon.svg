@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="tile" x2="0.8" y2="1">
+      <stop stop-color="#2d466b"/>
+      <stop offset="1" stop-color="#172337"/>
+    </linearGradient>
+    <mask id="moon">
+      <circle cx="49" cy="47" r="29" fill="white"/>
+      <circle cx="62" cy="34" r="26" fill="black"/>
+    </mask>
+  </defs>
+  <rect x="3" y="3" width="122" height="122" rx="26" fill="url(#tile)"/>
+  <circle cx="49" cy="47" r="29" fill="#b6d3ff" mask="url(#moon)"/>
+  <path d="M47 77Q63 72 79 81Q95 72 111 77V104Q95 99 79 108Q63 99 47 104Z" fill="#1c2c44" stroke="#e7f1ff" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M79 81V108" stroke="#a6c9fc" stroke-width="4" stroke-linecap="round"/>
+</svg>

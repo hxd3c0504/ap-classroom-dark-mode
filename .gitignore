@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__/
+node_modules/
+.env
+.env.*
+*.pem
+*.key
+preview/
+publish/
+DARK_MODE_REVIEW.md

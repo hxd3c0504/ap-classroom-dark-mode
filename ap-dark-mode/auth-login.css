@@ -1,0 +1,63 @@
+/* College Board identity widget: only colors, shared by its sign-in steps. */
+html[data-ap-dark="on"] {
+  color-scheme: dark;
+  --ap-bg: #171b22;
+  --ap-surface: #232a35;
+  --ap-text: #e4e8ef;
+  --ap-muted: #b5c2d5;
+  background-color: var(--ap-bg) !important;
+}
+html[data-ap-dark="on"] :is(body.cb-okta,#okta-login-container,#inactive-tab-main-div) {
+  background-color: var(--ap-bg) !important;
+  color: var(--ap-text) !important;
+}
+html[data-ap-dark="on"] #okta-sign-in {
+  background-color: var(--ap-surface) !important;
+  color: var(--ap-text) !important;
+  border-color: #596476 !important;
+}
+html[data-ap-dark="on"] #okta-sign-in :is(h1,h2,h3,p,label,legend,span,strong,small,.o-form-label,.o-form-explain,.identifier,.identifiertext) {
+  color: var(--ap-text) !important;
+}
+html[data-ap-dark="on"] #okta-sign-in :is(.o-form-input,.okta-form-input-field,.o-form-control,.password-with-toggle,textarea),
+html[data-ap-dark="on"] #okta-sign-in input:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"]) {
+  background-color: var(--ap-bg) !important;
+  color: var(--ap-text) !important;
+  border-color: #8292a9 !important;
+}
+html[data-ap-dark="on"] #okta-sign-in :is(input,textarea)::placeholder {
+  color: var(--ap-muted) !important;
+}
+html[data-ap-dark="on"] #okta-sign-in :is(input,textarea):focus {
+  border-color: #a8ceff !important;
+}
+html[data-ap-dark="on"] #okta-sign-in a {
+  color: #a8ceff !important;
+}
+html[data-ap-dark="on"] #okta-sign-in a:is(:hover,:focus-visible) {
+  color: #d4e7ff !important;
+}
+html[data-ap-dark="on"] #okta-sign-in :is(.button-primary,input[type="submit"],button[type="submit"]) {
+  background-color: #315798 !important;
+  color: #f1f6ff !important;
+  border-color: #8cafe2 !important;
+}
+html[data-ap-dark="on"] #okta-sign-in :is(.button-primary,input[type="submit"],button[type="submit"]):is(:hover,:focus-visible) {
+  background-color: #3a609e !important;
+  color: #fff !important;
+}
+html[data-ap-dark="on"] #okta-sign-in :is(.button-primary,button[type="submit"]) span {
+  color: inherit !important;
+}
+html[data-ap-dark="on"] #okta-sign-in :is(.password-toggle,.password-toggle-icon,.icon-show,.icon-hide) {
+  color: #b5c2d5 !important;
+  background-color: transparent !important;
+}
+html[data-ap-dark="on"] #okta-sign-in :is(.o-form-error-container,.okta-form-infobox-error,.infobox-error) {
+  background-color: #4b2932 !important;
+  color: #ffc9d1 !important;
+  border-color: #d68c9b !important;
+}
+html[data-ap-dark="on"] #okta-sign-in :is(.o-form-error-container,.okta-form-infobox-error,.infobox-error) :is(p,span,strong) {
+  color: #ffc9d1 !important;
+}

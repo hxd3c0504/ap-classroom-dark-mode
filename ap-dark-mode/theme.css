@@ -1,0 +1,326 @@
+/* Colors only; original layout, dimensions and fonts stay intact. */
+html[data-ap-dark="on"] {
+  color-scheme: dark;
+  --ap-bg: #171b22;
+  --ap-surface: #232a35;
+  --ap-toolbar: #253146;
+  --ap-text: #e4e8ef;
+  --ap-border: #596476;
+  background-color: var(--ap-bg) !important;
+}
+html[data-ap-dark="on"] :is(body,#root,.lrn,.lrn_widget,.lrn_question,.lrn_stimulus_content,.lrn_response_innerbody,.bg-white,.cb-white-bg) {
+  background-color: var(--ap-bg) !important;
+  color: var(--ap-text) !important;
+}
+html[data-ap-dark="on"] :is(h1,h2,h3,h4,h5,h6,p,li,label,legend,pre,code),
+html[data-ap-dark="on"] .lrn :is(span,div),
+html[data-ap-dark="on"] [class*="text-bluebook-black"] {
+  color: var(--ap-text) !important;
+}
+html[data-ap-dark="on"] :is(.bluebook-player-header,.bluebook-player-footer,.bg-bluebook-blue1) {
+  background-color: var(--ap-toolbar) !important;
+  color: var(--ap-text) !important;
+}
+html[data-ap-dark="on"] :is(.bg-bluebook-light-gray,.bluebook-lightbox-element,.standalone_code,pre,code,.cb-gray5-bg,.cb-gray10-bg) {
+  background-color: var(--ap-surface) !important;
+  color: var(--ap-text) !important;
+}
+html[data-ap-dark="on"] .bg-bluebook-pink-100 {
+  background-color: #4b2932 !important;
+  color: #ffc9d1 !important;
+}
+html[data-ap-dark="on"] :is(.bluebook-player-header,.bluebook-player-footer,.bluebook-lightbox-element) button {
+  color: var(--ap-text) !important;
+}
+html[data-ap-dark="on"] :is(.bluebook-player-header,.bluebook-player-footer) :is(span,div,section) {
+  color: var(--ap-text) !important;
+}
+html[data-ap-dark="on"] :is(img[alt="Annotation icon"],img[alt="Reference icon"],img[alt="More icon"]) {
+  filter: invert(1) !important;
+}
+html[data-ap-dark="on"] .bluebook-player-footer svg {
+  fill: var(--ap-text) !important;
+}
+html[data-ap-dark="on"] :is(.lrn_response_input,.lrn_mcqgroup label,.lrn-mcq-option) {
+  background-color: var(--ap-surface) !important;
+  border-color: var(--ap-border) !important;
+}
+html[data-ap-dark="on"] :is(input:not([type="radio"]):not([type="checkbox"]),textarea,select) {
+  background-color: var(--ap-surface) !important;
+  color: var(--ap-text) !important;
+  border-color: var(--ap-border) !important;
+}
+html[data-ap-dark="on"] a:not(.cb-btn):not([role="button"]) { color: #9ccaff !important; }
+html[data-ap-dark="on"] .cb-btn {
+  background-color: #3255bc !important;
+  color: #fff !important;
+  border-color: #8aabff !important;
+}
+html[data-ap-dark="on"] ::selection { background-color: #3c5786; color: #fff; }
+html[data-ap-dark="on"] .popover__content {
+  background-color: var(--ap-surface) !important;
+  color: var(--ap-text) !important;
+  border-color: var(--ap-border) !important;
+}
+html[data-ap-dark="on"] .popover__content :is(div,span,button) {
+  color: var(--ap-text) !important;
+}
+html[data-ap-dark="on"] .popover__content :is(svg,path) { fill: var(--ap-text) !important; }
+html[data-ap-dark="on"] .popover__content img:is([alt="close"],[alt="current question icon"],[alt="dashed square border"]) {
+  filter: invert(1) !important;
+}
+html[data-ap-dark="on"] #reference-sheet-accordion :is(table,th,td,.cb-accordion-panel,.cb-accordion-content) {
+  background-color: var(--ap-bg) !important;
+  color: var(--ap-text) !important;
+  border-color: var(--ap-border) !important;
+}
+/* The site's darken blend hides pale code against a dark page. */
+html[data-ap-dark="on"] :is(.standalone_code,.inline_code,.dap_inline,pre,code) {
+  mix-blend-mode: normal !important;
+  background-color: var(--ap-surface) !important;
+  color: var(--ap-text) !important;
+}
+html[data-ap-dark="on"] #reference-sheet {
+  background-color: var(--ap-bg) !important;
+  color: var(--ap-text) !important;
+}
+html[data-ap-dark="on"] .cb-accordion-controls button {
+  background-color: var(--ap-surface) !important;
+  color: var(--ap-text) !important;
+}
+html[data-ap-dark="on"] #reference-sheet a { color: #9ccaff !important; }
+html[data-ap-dark="on"] .popover__content[aria-label="More"] img {
+  filter: invert(1) !important;
+}
+
+/* Classroom navigation and assignment lists. Keep all original geometry. */
+html[data-ap-dark="on"] #sidebar {
+  background-color: #1c2430 !important;
+  color: var(--ap-text) !important;
+}
+html[data-ap-dark="on"] #sidebar nav[aria-label="First level"] > ul {
+  background-color: #1c2b41 !important;
+}
+html[data-ap-dark="on"] #sidebar nav[aria-label="Second level"] ul {
+  background-color: #1c2430 !important;
+}
+html[data-ap-dark="on"] #sidebar :is(a,span,[role="button"]) {
+  color: #c6d2e3 !important;
+}
+html[data-ap-dark="on"] #sidebar [class*="first-level-item-active-"] {
+  background-color: #2b4261 !important;
+  color: #eef4ff !important;
+}
+html[data-ap-dark="on"] #sidebar nav[aria-label="Second level"] [class~="bg-opacity-10"] {
+  background-color: #2b4261 !important;
+  color: #b8d7ff !important;
+}
+html[data-ap-dark="on"] #sidebar :is(a,[role="button"]):hover,
+html[data-ap-dark="on"] #sidebar nav[aria-label="Second level"] a:hover > span {
+  background-color: #26364d !important;
+  color: #eef4ff !important;
+}
+html[data-ap-dark="on"] #main-content:has(.student_assignments_table) :is(.text-black,.text-gray-900,.text-gray-800) {
+  color: var(--ap-text) !important;
+}
+html[data-ap-dark="on"] #main-content:has(.student_assignments_table) .text-page-subtitle {
+  color: #a9b8cc !important;
+}
+html[data-ap-dark="on"] #main-content .horizontal-tabs-list {
+  background-color: var(--ap-bg) !important;
+  border-color: #3c485b !important;
+}
+html[data-ap-dark="on"] #main-content .horizontal-tab {
+  background-color: var(--ap-surface) !important;
+  color: #b9c6d9 !important;
+  border-color: #3c485b !important;
+}
+html[data-ap-dark="on"] #main-content .horizontal-tab :is(div,span) {
+  color: inherit !important;
+}
+html[data-ap-dark="on"] #main-content .horizontal-tab[aria-selected="true"] {
+  background-color: #2b4261 !important;
+  color: #dceaff !important;
+  border-color: #8ab8f8 !important;
+}
+html[data-ap-dark="on"] #main-content .horizontal-tab:hover {
+  background-color: #2c3b51 !important;
+}
+html[data-ap-dark="on"] #main-content .banner-wrapper {
+  background-color: #20392e !important;
+  color: #d7e9de !important;
+  border-color: #43634e !important;
+}
+html[data-ap-dark="on"] #main-content .banner-wrapper :is(div,span,p) {
+  color: #d7e9de !important;
+}
+html[data-ap-dark="on"] #main-content .banner-wrapper a {
+  color: #a9d7ff !important;
+}
+html[data-ap-dark="on"] #main-content .banner-wrapper button svg path,
+html[data-ap-dark="on"] #main-content [aria-label="Help menu"] svg path {
+  fill: var(--ap-text) !important;
+}
+html[data-ap-dark="on"] .student_assignments_table :is(th,td),
+html[data-ap-dark="on"] .student_assignments_table :is(th,td) :is(div,span) {
+  color: var(--ap-text) !important;
+  border-color: #3c485b !important;
+}
+html[data-ap-dark="on"] .student_assignments_table .title-cell :is(div,span,a) {
+  color: #a8ceff !important;
+}
+html[data-ap-dark="on"] .student_assignments_table .starts-at-cell :is(div,span),
+html[data-ap-dark="on"] .student_assignments_table :is(.due-at-cell,.timer-cell) {
+  color: #bdc9da !important;
+}
+html[data-ap-dark="on"] .student_assignments_table .status-cell {
+  color: #bdd4ef !important;
+}
+html[data-ap-dark="on"] .student_assignments_table tr {
+  border-color: #3c485b !important;
+}
+html[data-ap-dark="on"] .student_assignments_table tbody tr:hover {
+  background-color: #202d40 !important;
+}
+html[data-ap-dark="on"] .student_assignments_table button {
+  background-color: transparent !important;
+  border-color: #789fd3 !important;
+  color: #a8ceff !important;
+}
+html[data-ap-dark="on"] .student_assignments_table button:hover {
+  background-color: #2b4261 !important;
+}
+html[data-ap-dark="on"] .student_assignments_table thead :is(button,span,div) {
+  color: #c8d4e5 !important;
+}
+html[data-ap-dark="on"] .student_assignments_table thead svg path {
+  fill: #a2b3ca !important;
+}
+html[data-ap-dark="on"] #main-content:has(.student_assignments_table) input::placeholder {
+  color: #a7b4c8 !important;
+}
+/* Preserve contrast on the site's yellow account button. */
+html[data-ap-dark="on"] #main-content:has(.student_assignments_table) [aria-label="User menu"],
+html[data-ap-dark="on"] #main-content:has(.student_assignments_table) [aria-label="User menu"] :is(div,span) {
+  color: #171b22 !important;
+}
+
+/* Shared Apricot components: every surface declares its own text colors. */
+html[data-ap-dark="on"] :is(.cb-card,.cb-accordion-panel,.cb-accordion-panel-content,.cb-dropdown-menu,.cb-menu-panel,.cb-modal-content,.cb-popover) {
+  background-color: var(--ap-surface) !important;
+  color: var(--ap-text) !important;
+  border-color: #46546a !important;
+}
+html[data-ap-dark="on"] :is(.cb-card,.cb-accordion-panel,.cb-modal-content) :is(.cb-card-title,.cb-card-desc,.cb-black1-color,.cb-gray1-color) {
+  color: var(--ap-text) !important;
+}
+html[data-ap-dark="on"] :is(.cb-card a:not(.cb-btn),.cb-menu-list a:not(.cb-btn),.cb-dropdown-menu a:not(.cb-btn),.cb-accordion-heading) {
+  color: #a8ceff !important;
+}
+html[data-ap-dark="on"] :is(.cb-gray20-bg,.cb-gray30-bg,.cb-blue1-bg,.cb-blue2-bg) {
+  background-color: var(--ap-surface) !important;
+  color: var(--ap-text) !important;
+}
+html[data-ap-dark="on"] .cb-btn :is(span,strong) { color: inherit !important; }
+html[data-ap-dark="on"] .cb-btn-yellow {
+  background-color: #e2c064 !important;
+  color: #1b2432 !important;
+  border-color: #e2c064 !important;
+}
+html[data-ap-dark="on"] :is(.cb-btn:hover,.cb-btn:focus-visible) {
+  background-color: #3a609e !important;
+  color: #f1f6ff !important;
+}
+html[data-ap-dark="on"] #reference-sheet #reference-sheet-accordion :is(.cb-white-bg,.cb-accordion-heading,.cb-accordion-panel,.cb-accordion-panel-content,table,thead,tbody,th,td) {
+  background-color: var(--ap-surface) !important;
+  color: var(--ap-text) !important;
+  border-color: #46546a !important;
+}
+html[data-ap-dark="on"] #reference-sheet #reference-sheet-accordion .cb-accordion-heading :is(div,span) {
+  color: #a8ceff !important;
+}
+/* Replace the reference accordion's original white gradient surface. */
+html[data-ap-dark="on"] #reference-sheet #reference-sheet-accordion .cb-accordion-panel,
+html[data-ap-dark="on"] #reference-sheet #reference-sheet-accordion .Rectangle {
+  background-image: none !important;
+}
+html[data-ap-dark="on"] #reference-sheet #reference-sheet-accordion .Rectangle {
+  background-color: var(--ap-surface) !important;
+}
+html[data-ap-dark="on"] #reference-sheet .cb-accordion-icon .line {
+  background-color: #a8ceff !important;
+}
+html[data-ap-dark="on"] #reference-sheet :is(pre,code) {
+  border-color: #46546a !important;
+}
+html[data-ap-dark="on"] .lrn [aria-label="Mark for review"],
+html[data-ap-dark="on"] .lrn [aria-label="Mark for review"] + label,
+html[data-ap-dark="on"] .bluebook-lightbox-element button {
+  background-color: #2b3a50 !important;
+  color: #f0f4fb !important;
+}
+html[data-ap-dark="on"] .cb-band.cb-blue2-tint-2,
+html[data-ap-dark="on"] :is(#main-content,#reference-sheet) .cb-accordion-heading,
+html[data-ap-dark="on"] :is(#main-content,#reference-sheet) .cb-accordion-heading:hover {
+  background-color: var(--ap-surface) !important;
+  color: var(--ap-text) !important;
+  border-color: #46546a !important;
+}
+html[data-ap-dark="on"] :is(#main-content,#reference-sheet) .cb-accordion-heading :is(p,strong,span,div) {
+  color: inherit !important;
+}
+html[data-ap-dark="on"] .cb-btn.cb-btn-greyscale,
+html[data-ap-dark="on"] .cb-btn.cb-btn-greyscale:hover {
+  background-color: #2b3a50 !important;
+  color: #f0f4fb !important;
+  border-color: #8598b4 !important;
+}
+html[data-ap-dark="on"] #main-content :is(.text-black,.text-gray-900,.text-gray-800) {
+  color: var(--ap-text) !important;
+}
+html[data-ap-dark="on"] #main-content :is(.text-blue-600,.text-blue-700) {
+  color: #a8ceff !important;
+}
+html[data-ap-dark="on"] #main-content button:is(.text-blue-600,.text-blue-700) {
+  border-color: #789fd3 !important;
+}
+html[data-ap-dark="on"] #main-content [class~="bg-blue-100"] {
+  background-color: #25344a !important;
+  color: var(--ap-text) !important;
+}
+html[data-ap-dark="on"] #main-content [aria-label="User menu"],
+html[data-ap-dark="on"] #main-content [aria-label="User menu"] :is(div,span) {
+  color: #171b22 !important;
+}
+html[data-ap-dark="on"] #main-content :is(.bg-gray-50,.bg-gray-100,.bg-gray-200),
+html[data-ap-dark="on"] .wizard_container {
+  background-color: var(--ap-surface) !important;
+  color: var(--ap-text) !important;
+  border-color: #46546a !important;
+}
+html[data-ap-dark="on"] #main-content :is(.text-gray-500,.text-gray-600,.text-gray-700,.text-zinc-500),
+html[data-ap-dark="on"] :is(.wizard_tag,.wizard_wizard_steps_text),
+html[data-ap-dark="on"] .wizard_container .text-gray-600 {
+  color: #b5c2d5 !important;
+}
+
+/* Review page surfaces; number states and media keep their original colors. */
+html[data-ap-dark="on"] .bluebook-player-inner-container [data-ap-review-surface="page"],
+html[data-ap-dark="on"] .bluebook-player-inner-container[data-ap-review-surface="page"] {
+  background-color: var(--ap-bg) !important;
+  color: var(--ap-text) !important;
+}
+html[data-ap-dark="on"] .bluebook-player-inner-container [data-ap-review-surface="card"] {
+  background-color: var(--ap-surface) !important;
+  color: var(--ap-text) !important;
+  border-color: var(--ap-border) !important;
+}
+/* Fractions on the original yellow/green result bars must stay black. */
+html[data-ap-dark="on"] .student_assignments_table [data-ap-score-fraction],
+html[data-ap-dark="on"] .student_assignments_table [data-ap-score-fraction] :is(span,div,p,strong,b,a) {
+  color: #000 !important;
+}
+html[data-ap-dark="on"] .student_assignments_table [data-ap-score-fraction]:is(text,tspan),
+html[data-ap-dark="on"] .student_assignments_table [data-ap-score-fraction] :is(text,tspan) {
+  fill: #000 !important;
+}

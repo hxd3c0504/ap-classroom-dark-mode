@@ -1,0 +1,51 @@
+/* My AP account-type entry: colors only, isolated from the classroom theme. */
+html[data-ap-dark="on"] {
+  color-scheme: dark;
+  --ap-bg: #171b22;
+  --ap-surface: #232a35;
+  --ap-text: #e4e8ef;
+  --ap-link: #a8ceff;
+  background-color: var(--ap-bg) !important;
+}
+html[data-ap-dark="on"] :is(body,#root) {
+  background-color: var(--ap-bg) !important;
+  color: var(--ap-text) !important;
+}
+html[data-ap-dark="on"] #root .cb-band-hero-card {
+  background-color: #1d2a42 !important;
+  color: var(--ap-text) !important;
+}
+html[data-ap-dark="on"] #root .cb-band-hero-title {
+  color: var(--ap-text) !important;
+}
+html[data-ap-dark="on"] #identityCardComponent {
+  background-color: var(--ap-surface) !important;
+  color: var(--ap-text) !important;
+  border-color: #596476 !important;
+}
+html[data-ap-dark="on"] #identityCardComponent :is(h2,p,strong) {
+  color: var(--ap-text) !important;
+}
+html[data-ap-dark="on"] #identityCardComponent .cb-gray8-border {
+  border-color: #596476 !important;
+}
+html[data-ap-dark="on"] #identityCardComponent .cb-blue5-color {
+  color: #a8ceff !important;
+}
+html[data-ap-dark="on"] #identityCardComponent .cb-btn-primary {
+  background-color: #315798 !important;
+  color: #f1f6ff !important;
+  border-color: #8cafe2 !important;
+}
+html[data-ap-dark="on"] #identityCardComponent .cb-btn-primary:is(:hover,:focus-visible) {
+  background-color: #3a609e !important;
+  color: #fff !important;
+}
+html[data-ap-dark="on"] #identityCardComponent .cb-btn-naked {
+  background-color: transparent !important;
+  color: var(--ap-link) !important;
+}
+html[data-ap-dark="on"] #identityCardComponent .cb-btn-naked:is(:hover,:focus-visible) {
+  background-color: #2b3a50 !important;
+  color: #d4e7ff !important;
+}
