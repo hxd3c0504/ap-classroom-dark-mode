@@ -45,6 +45,18 @@ html[data-ap-dark="on"] :is(.lrn_response_input,.lrn_mcqgroup label,.lrn-mcq-opt
   background-color: var(--ap-surface) !important;
   border-color: var(--ap-border) !important;
 }
+/* The option icon has fixed SVG fills. Undo replaces the icon when masked. */
+html[data-ap-dark="on"] .lrn-mcq-option .option-eleminator-button {
+  color: #a9d1ff !important;
+}
+html[data-ap-dark="on"] [data-cy="crossout-question-toggle"] svg path {
+  fill: #a9d1ff !important;
+}
+/* The site draws one strike across the row and another through the letter. */
+html[data-ap-dark="on"] .lrn-mcq-option[data-masked="true"]::after,
+html[data-ap-dark="on"] .lrn-mcq-option[data-masked="true"] > .lrn-label::before {
+  background-color: #e4e8ef !important;
+}
 html[data-ap-dark="on"] :is(input:not([type="radio"]):not([type="checkbox"]),textarea,select) {
   background-color: var(--ap-surface) !important;
   color: var(--ap-text) !important;
